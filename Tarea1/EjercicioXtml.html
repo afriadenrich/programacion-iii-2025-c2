@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpaceX</title>
+
+    <style>
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header {
+            position: relative;
+            z-index: 10;
+            color: white;
+        }
+
+        h1 {
+            display: inline-block;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 30px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: inline-block;
+            margin-left: 190px;
+        }
+
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .upcoming-launches {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-align: right;
+            z-index: 10;
+        }
+
+        .upcoming-launches p {
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+
+        .T-2D {
+            position: absolute;
+            top: 49%;
+            left: 40px;
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            z-index: 5;
+        }
+
+        .STARSHIP {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            width: 80%;
+            max-width: 800px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            z-index: 5;
+        }
+
+        .watch {
+            position: absolute;
+            top: 550px;
+            left: 40px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 20px;
+            font-family: Arial;
+            font-size: 14px;
+            text-transform: uppercase;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        .watch:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop>
+        <source src="https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_Rotation_Web_HB_d96299f9de.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <h1>SpaceX</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Vehicles</a></li>
+                <li><a href="#">Launches</a></li>
+                <li><a href="#">Human Spaceflight</a></li>
+                <li><a href="#">Rideshare</a></li>
+                <li><a href="#">Starlink</a></li>
+                <li><a href="#">Starshield</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="upcoming-launches">
+        <p>UPCOMING LAUNCHES</p>
+        <p>Starlink Mission<br><strong>March 2025</strong></p>
+    </div>
+
+    <div class="T-2D">
+        <p>T-2D</p>
+    </div>
+
+    <div class="STARSHIP">
+        <p>STARSHIP'S TENTH FLIGHT TEST</p>
+    </div>
+
+    <button class="watch">Watch</button>
+
+</body>
+</html>

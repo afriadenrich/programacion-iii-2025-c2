@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ingreso Alumnos al SYSACAD</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    </head>
+    
+    <body>
+        <img src="https://servicios.fra.utn.edu.ar/Sysacad/Logo_utn.png">
+        <header class="Encabezado">
+
+            <h1 class="titulo del encabezado">
+                <p>
+                    universidad tecnologica nacional
+                    <br>
+                    Facultad Regional Avellaneda
+                </p>
+            </h1>
+            <h2 class="subtitulo del encabezado">
+                <p>
+                    Sistema Académico SYSACAD
+                    <br>
+                    Módulo de autogestión alumnos
+                </p>
+            </h2>
+        </header>
+
+        <pre class="espacio"></pre>
+
+        <FORM METHOD="POST" ACTION="menuAlumno.asp" ENCTYPE="application/x-www-form-urlencoded" NAME="login">
+            <table align="center" width="320" cellpadding="8" cellspacing="0">
+                <tr><th class="tituloTabla" colspan="2">Inicio de sesi&oacute;n</th></tr>
+                <tbody class="textoTabla">
+                    <tr>
+                        <td align="right">Legajo: </td>
+                        <td><INPUT TYPE="text" NAME="legajo"  SIZE=15></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Contrase&ntilde;a: </td>
+                        <td><input type="password" name="password" maxlength="12" size="15" title="Contrase&ntilde;a - solo letras y numeros" pattern="[0-9a-zA-Z!@#\$%\^\&*_=+-]{0,12}"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><INPUT TYPE="submit" class="botonlogin" NAME="loginbutton" VALUE="Ingresar"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+     </body>
+
+</html>
