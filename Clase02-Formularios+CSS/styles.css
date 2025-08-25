@@ -1,0 +1,83 @@
+/* 
+selector {
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+}
+
+¿A qué elemento / etiqueta tiene que afectar?
+¿A qué clase queremos afectar? o 
+¿A qué ID único?
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: red;
+}
+
+html body nav button {
+  background-color: chocolate;
+}
+
+.fondo-verde {
+  background-color: chartreuse;
+}
+
+header .fondo-verde {
+  background-color: blueviolet;
+}
+
+#boton-importante {
+  background-color: white;
+}
+
+body {
+  background-color: rgb(180, 166, 146);
+}
+
+footer {
+  background-color: blue;
+}
+
+/* Todos los button Y todos los P */
+header button,
+p {
+  text-decoration: underline;
+}
+
+/* #id */
+#titulo {
+  color: #375f3d;
+  text-decoration: #000 overline dashed 5px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+}
+
+header {
+  background-color: #7597b5;
+  width: 50%;
+  height: 500px;
+}
+
+header img {
+  width: 50%;
+  aspect-ratio: 4 / 3;
+}
+
+/*
+  margen -> margin
+  "relleno" -> padding
+*/
+
+main {
+  margin: 10px;
+  border-color: #000;
+  border-width: 5px;
+  border-style: solid;
+}
