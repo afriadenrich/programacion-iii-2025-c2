@@ -1,0 +1,11 @@
+main {
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+}
+
+div {
+  width: 100px;
+}

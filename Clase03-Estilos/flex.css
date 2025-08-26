@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* flex-flow: row wrap; es lo mismo*/
+}
+
+header button {
+  flex: 0 1 50px;
+  /* flex-grow: 0;
+  flex-shrink: 1; 
+  flex-basis: 50px;
+  es lo mismo
+  */
+}
+
+header h1 {
+  flex-grow: 0;
+  flex-basis: 100px;
+  flex-shrink: 0;
+}
+
+header nav {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+#busqueda {
+  flex-shrink: 1;
+}
