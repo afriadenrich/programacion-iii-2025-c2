@@ -1,0 +1,125 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+html{
+    font-size: 16px;
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.0rem;
+    min-height: 100vh;  /* para que el footer quede abajo */
+}
+
+#header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#logo-container img {
+    width: 142px;
+    height: auto;
+    display: block;
+}
+
+
+header{
+    display:grid;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    background-color: rgb(238, 238, 0);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#search-bar input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 500px;
+    position: relative;
+    right: 55px;
+}
+#search-bar button {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    position: relative;
+    right: 60px;
+}
+
+#promo-img{
+    width: 400px;
+    height: auto;
+    display: block;
+}
+
+#nav-container{
+    display: flex;
+    justify-content: space-around; */
+}
+
+
+#section-banner {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    height: 400px;
+    position: relative;  /* para que el banner hijo se posicione relativo a este */
+
+    display: flex;               /* usamos flex en el contenedor */
+    flex-direction: column;      /* apilamos en columna */
+    justify-content: flex-end;   /* empuja todo hacia abajo */
+    align-items: center;         /* centra horizontal */
+}
+
+#carousel {
+   
+    position: absolute;          /* ocupa todo el fondo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;                  /* al fondo */
+    background-image: url("https://http2.mlstatic.com/D_NQ_845844-MLA90377102786_082025-OO.webp");
+    background-size: cover;       /* que cubra todo el contenedor */
+    background-position: center;  /* centrado */
+    background-repeat: no-repeat; /* que no se repita */
+}
+#cards-container {
+    background-color: lightgreen;
+    display: flex;
+    gap: 10px;                   /* espacio entre cards */
+    z-index: 1;                  /* por encima del carrusel */
+    position: relative;           /* asegura que respete el z-index */
+}
+
+.card{
+    border: 1px solid black;
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+}
+.section-articulos{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+}
+footer{
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+

@@ -1,0 +1,100 @@
+/* reset basico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* contenedo en grid */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "sidebar navbar rightbar"
+      "sidebar main rightbar"
+      "footer footer footer";
+    min-height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  /* sidebar */
+  .sidebar {
+    grid-area: sidebar;
+    background: #1da1f2;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .sidebar nav ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* navbar */
+  .navbar {
+    grid-area: navbar;
+    background: white;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  
+    /* uso flex para alinear elementos en una linea simplement*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* contenido central */
+  .main-content {
+    grid-area: main;
+    background: #f5f8fa;
+    padding: 20px;
+  }
+  
+  .tweets {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .tweet {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e1e8ed;
+  }
+  
+  /* rightbar derecha */
+  .rightbar {
+    grid-area: rightbar;
+    background: #f5f8fa;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .rightbar ul {
+    list-style: none;
+  }
+  
+  .rightbar ul li {
+    margin: 10px 0;
+  }
+  
+  /* footer */
+  .footer {
+    grid-area: footer;
+    background: #1da1f2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  

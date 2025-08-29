@@ -1,0 +1,78 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
+
+  }
+header{
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.8) 0%,   /* negro más opaco arriba */
+        rgba(0, 0, 0, 0.4) 50%,  /* intermedio */
+        rgba(0, 0, 0, 0) 100%    /* transparente abajo */
+      );
+    color: white;
+    position: fixed;
+    top: 0px;
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    padding-left: 170px;
+    padding-right: 170px;
+    display: flex;/* activo las propiedades del flexbox*/
+    align-items: center; 
+    overflow: hidden;    /* evita que el contenido se salga */
+  }
+  .header-content{
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;        
+    margin: 0 auto;
+    height: 100%;             
+    box-sizing: border-box;     /* incluye padding dentro de la altura */
+    width: 100%;
+  }
+
+  .logo-container {
+    height: 100%;        /* ocupa todo el alto del header */
+    display: flex;       /* para centrar verticalmente el logo */
+    align-items: center; /* centra la imagen dentro */
+  }
+  
+  .logo-container img {
+    max-height: 100%; /* nunca supera la altura del header */
+    height: auto;     /* mantiene proporción */
+  }
+
+  .btn-IniciarSesion{
+    background-color: rgb(250, 24, 24);
+    border-style: none;
+    padding: 10px 18px 10px 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  .btn-IniciarSesion:hover{
+    background-color: rgb(184, 21, 21);
+  }
+
+  .lang-options{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 9px 17px 9px 17px;
+    font-weight: 600;
+    font-size: 15px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+  }
+

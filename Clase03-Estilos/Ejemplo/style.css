@@ -31,11 +31,7 @@ header {
   gap: 10px;
 }
 
-#titulo > button {
-  height: 30px;
-  width: 30px;
-}
-
+#titulo > button,
 #titulo > img {
   height: 30px;
   width: 30px;

@@ -1,0 +1,144 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+  background-color: #18937E;
+  padding: 7px;
+  text-align: center;
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* HEADER con FLEX */
+.header {
+  background: #004080;
+  color: white;
+  padding: 12px 16px;
+
+  display: flex;              /* usamos flexbox */
+  justify-content: space-between; /* logo a la izq, nav a la der */
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;      
+  gap: 14px;          
+}
+
+.nav a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* COTIZACIONES con GRID */
+.cotizaciones {
+  background: white;
+  margin: 16px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.cotizaciones h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.card_blue {
+  background-color: #e0f0ff;
+  border: 1px solid #99ccff;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  margin-bottom: 16px;
+
+  grid-column: 1;
+  grid-row: 1 /2 span; /* ocupa 2 filas */
+  
+}
+
+.card_right{
+  background-color:white;
+  border: 1px solid #ff9999;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+
+  grid-column: 4;         /* última columna */
+  grid-row: 1 / 2 span; /* ocupa 2 filas */
+}
+/* grid para las tarjetas */
+.cards {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 250px; /* 2 columnas */
+  gap: 16px; /* espacio entre tarjetas */
+  
+}
+
+.card {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 6px;
+  color: #0054a6;
+}
+
+/* NOTICIAS con FLEX vertical */
+.noticias {
+  background: white;
+  margin: 16px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.noticias h2 {
+  margin-bottom: 10px;
+}
+
+.noticias ul {
+  display: flex;
+  flex-direction: column; /* uno debajo del otro */
+  gap: 8px;
+  list-style: disc inside;
+}
+
+/* FOOTER con FLEX centrado */
+.footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 16px;
+
+  display: flex;
+  justify-content: center;
+}

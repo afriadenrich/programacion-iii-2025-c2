@@ -1,0 +1,29 @@
+.motivosParaUnirte{
+    margin: 15px 170px 15px 170px;
+}
+.section-name{
+    font-size: 25px;
+    color: white;
+}
+.titulo{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.razon{
+    font-size: 18px;
+    color: rgb(173, 173, 173);
+}
+.motivos-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    height: 300px;
+    column-gap: 20px;
+}
+.motivo{
+    border-style: none;
+    background-color: rgb(32, 19, 49);
+    border-radius: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+}

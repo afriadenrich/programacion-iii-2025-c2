@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+}
+
+button {
+    cursor: pointer;
+}
+
+br {
+    height: 15px;
+}
+
+/* -- Header Nav-- */ 
+
+header nav {
+    background-color: #0d1117;
+    color: #9ba3b4;
+    height: 74px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+#nav-links_container img {
+    width: 32px;
+}
+
+#nav-links_container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #c3d0e5;
+}
+
+.nav-link span{
+    color: #c3d0e5;
+    font-size: 1.2rem;
+}
+
+.nav-link:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Header Actions */
+
+#nav-actions {
+    display: flex;
+}
+
+#nav-input-container {
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #31343a;
+    color: #fff;
+}
+
+#nav-input-container:focus-within{
+    outline: #757a86 1px solid;
+}
+
+#nav-input-container input {
+    background-color: inherit;
+    padding: 7px 12px;
+    border: none;
+    outline: none;
+    color: #fff;
+    
+}
+
+#nav-input-container input::placeholder {
+    color: #9ba3b4;
+}
+
+#nav-actions button {
+    color: #fff;
+    background-color: #0078d4;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 6px 16px;
+    transition: background-color .1s ease-out;
+    margin-left: 6px;
+}
+
+#nav-actions button:hover {
+    background-color: #005ba4;
+}
+
+/* Header Extra */
+
+#header-extra {
+    color: #a6adbd;
+    text-align: center;
+    background-color: #0a1525;
+    border-top: 2px solid #28313f;
+    border-bottom: 2px solid #28313f;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 8px;
+}
+
+#header-extra a {
+    color: #48e;
+}
+
+/* -------------------------------------------- */
+
+/* Main Welcome Page */
+
+#welcome-page {
+    min-height: 100dvh;
+    background-image: 
+        linear-gradient(to bottom, rgba(1,1,35,0) 80%, #0d1117 100%),
+        url(./background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+h1 {
+    margin-top: 24px;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+#download-box {
+    background-color: #252c34aa;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    font-size: .7rem;
+    padding: 14px 8px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#download-box button {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 0;
+    width: 95%; /* 95% ancho en relacion con la caja */
+    border: none;
+    border-radius: 8px;
+    /* para acomodar el icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    outline: solid 1px rgba(0, 0, 0, 0);
+    outline-offset: 0px;
+    transition: outline .2s ease, outline-offset .5s ease;
+}
+
+
+#download-box button:hover {
+    outline-offset: 3px;
+    outline-width: 2px;
+    outline-color: rgba(230, 238, 250, 0.925);
+}
+
+#download-box p a{
+    color: #fff;
+    font-weight: 500;
+}
+
+#welcome-page video {
+    width: 50dvw;
+    max-width: 1100px;
+    min-width: 900px;
+}
+
+#button-video {
+    background-color: transparent;
+    color: #9ba3b4;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 6px 20px;
+    transition: border .2s ease;
+}
+
+#button-video:hover{
+    border-color: #c3d0e5;
+}
+
+
+/* Main Cards */
+
+#section-uses {
+    min-height: 50dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+#cards-container {
+    color: #9FB1D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+    min-width: 50%;
+}
+
+.card {
+    width: 345px;
+    height: 350px;
+    border: 1px solid #31343a;
+    border-radius: 10px;
+    background-color: #161a20;
+    padding: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: filter .5s ease;
+}
+
+.card:hover {
+    filter: brightness(1.2);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: #dce5f8;
+}
+
+.card img {
+    width: 95%;
+}
+
+#banner-container {
+    color: #fff;
+    background-color: rgb(19, 44, 44);
+    background-image: url(https://code.visualstudio.com/assets/home/copilot-free-banner-bg-dark.webp);
+    background-size: cover;
+    border: 1px solid rgb(39, 25, 39);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 70px; 
+    gap: 12px;
+}
+
+#banner-container h2 {
+    margin-left: 8%;
+    align-self: end;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+#banner-container p {
+    font-weight: 500;
+    align-self: end;
+}
+
+#banner-container button {
+    grid-column: 2;
+    justify-self: start;
+    align-self: start;
+    background-color: #25292e;
+    color: #fff;
+    padding: 5px 12px;
+    border: 1px solid #9ba3b4;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color .2s ease;
+}
+
+#banner-container button:hover {
+    background-color: #393e43;
+}
+
+
+/* Main News */
+
+#section-news {
+    padding: 5dvh;
+    min-height: 80dvh;
+    color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8dvh;
+}
+
+#section-news a {
+    color: rgb(79, 144, 241);
+}
+
+.news {
+    width: 100%;
+    max-width: 1230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.news {
+    color: #9FB1D1;
+    font-weight: 500;
+}
+
+.news div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.news div h3 {
+    font-size: 1.75rem;
+    color: #c3d0e5;
+    font-weight: 500;
+}
+
+
+.news img {
+    max-width: 800px;
+}
+
+/* Main Features */
+
+#section-features {
+    max-width: 80%;
+    min-height: 65dvh;
+    margin: auto;
+    color: #9FB1D1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    gap: 70px;
+}
+
+#features-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#features-intro p {
+    font-size: 1.3rem;
+}
+
+#section-features h3 {
+    font-size: 2.2rem;
+    color: #c3cfe1;
+    font-weight: inherit;
+}
+
+#features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.features-card {
+    text-align: start;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 24px;
+    cursor: pointer;
+}
+
+.features-card:hover {
+    border-color: rgba(255, 255, 255, 0.20);
+}
+
+.features-card img {
+    height: 48px;
+    width: 48px;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.features-card h4 {
+    color: #c3cfe1;
+}
+
+.features-card p {
+    margin-top: 10px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    min-height: 15dvh;
+}
+
+#footer-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   max-width: 50%;
+   margin: auto;
+   gap: 30px;
+}
+
+
+#redes ul{
+    display: flex;
+    gap: 30px;
+}
+
+footer img {
+    width: 24px;
+}
+
+#redes + a {
+    justify-self: end;
+}
+
+#nav-secundaria ul {
+    display: flex;
+    gap: 20px;
+}
+
+#nav-secundaria ul li a {
+    text-decoration: none;
+    color: #9FB1D1;
+    font-weight: 500;
+}
+

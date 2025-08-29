@@ -1,0 +1,10 @@
+body {
+  margin: 0px 0px 0px 0px;
+  background-color: black;
+}
+
+.background-img {
+  object-fit: contain;
+  width: 100%;
+  filter: brightness(50%); /* reduce brillo al 50% */
+}

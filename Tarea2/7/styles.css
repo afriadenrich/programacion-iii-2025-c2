@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+/* ------------------------------------------------------ */
+
+  #promociones h1{
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  #promociones a{
+    text-decoration: none;
+  }
+
+  /* ------------------------------------------------------ */
+
+  #navegador{
+    background-color: rgb(237, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 30px;
+  }
+
+  #navegador img{
+    width: 210px;
+    height: auto;
+    display: block;
+  }
+
+  #navegador ul{
+    font-weight: bold;
+    list-style: none;
+    color: #ffffff;
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+  }
+
+  #navegador div{
+    display: flex;
+  }
+
+    #navegador div img{
+    width: 50px;
+  }
+
+  /* ------------------------------------------------------ */
+
+  #promocion2 img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ------------------------------------------------------ */
+
+  #carrusel img{
+    width: 100%;
+    display: block;
+  }
+
+  /* ---------------------------------- */
+
+  .productos {
+    text-align: center;
+    width: auto;
+  }
+
+  .contenedorProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    margin: 50px 0;
+    gap: 20px;
+  }
+
+.productos img {
+    width: 300px;
+    display: block;
+  }
+
+/* ------------------------------------------------------ */
+
+  /* Footer */
+footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(230, 225, 219) ;
+  }
+
+  footer h3 {
+    margin-top:10px;
+    margin-bottom:20px;
+    text-align: center;
+  }
+
+  footer section {
+    margin-bottom: 20px;
+    border-width: 10px;
+    border-color: rgb(0, 0, 0);
+    margin-right: 80px;
+  }
+
+  /* Imagen del mapa */
+footer img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+/* ------------------------------------------------------ */
+  /* PAGINA DE PRODUCTO INDIVIDUAL */
+
+  #productoIndividual{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #productoIndividual img{
+    padding-left: 40px;
+  }
+
+  #productoIndividual div{
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  #productoIndividual h4{
+    margin-top: 20px;
+  }
+
+  #productoIndividual button{
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold; 
+    margin-top: 20px;
+    margin-right: 15px;
+  }

@@ -1,0 +1,46 @@
+/* WEB */
+#principal {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+}
+
+nav {
+  background-color: #aaa;
+}
+
+/* MOBILE */
+
+main {
+  background-color: #a00;
+}
+
+aside {
+  background-color: #0a0;
+}
+
+@media screen and (max-width: 768px) and (width > 480px) {
+  #principal {
+    grid-template-columns: auto 200px;
+  }
+
+  nav {
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (width <= 480px) {
+  #principal {
+    grid-template-columns: auto;
+  }
+
+  nav {
+    grid-column: 1;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .fondo {
+    background-color: #000;
+    color: #fff;
+  }
+}

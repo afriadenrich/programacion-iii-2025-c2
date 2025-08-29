@@ -1,0 +1,46 @@
+#tendencias{
+    margin-left: 220px;
+    color: wheat;
+}
+.tendencias{
+    margin: 30px 50px 0px 50px;
+    display: flex;
+    justify-content: center;
+}
+.grid-tendencias{
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    column-gap: 50px;
+    
+}
+.movie-preview{
+    position: relative;
+    transition: transform 0.1s ease-in; /* cuando el cursor se aleja (vuelve rápido) */
+
+}
+.movie-preview:hover{
+    cursor: pointer;
+    /*transition: .3s linear;*/
+    transform: scale(1.1);
+    transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.grid-tendencias img{
+    /*
+    margin: 0 auto;
+    display: block;
+    width: 80%;*/
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.ranking{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -20px;
+    bottom: 28px;
+    font-size: 100px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white; /* grosor y color del contorno */
+}

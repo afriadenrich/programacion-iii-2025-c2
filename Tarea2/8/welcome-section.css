@@ -1,0 +1,50 @@
+*{
+    font-family:  Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+.welcome-section {
+    position: absolute;       
+    top: 50%;                 
+    left: 50%;                /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Centrado exacto */
+    color: white;             /* Para que el texto se vea sobre la imagen */
+    text-align: center;       /* Centrar texto */
+    z-index: 10;              
+    padding: 20px;            /* Espacio interno */
+    max-width: 600px;         /* Limita el ancho para que no se estire demasiado */
+}
+h2{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 22px;
+}
+p{
+    font-size: 15px;
+}
+.email-input{
+    background-color: rgba(0, 0, 0, 0.356);
+    font-size: 20px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.212);
+    width: 100%;
+    color: rgb(243, 243, 243);
+}
+
+.comenzar-button{
+    margin-top: 20px;
+    background-color: rgb(250, 24, 24);
+    border-style: none;
+    padding: 10px 18px 10px 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.comenzar-button:hover{
+    background-color: rgb(184, 21, 21);
+}
