@@ -49,4 +49,6 @@ mostrar(String().concat("Hola\"'", " ", "mundo"));
 mostrar(resultado.startsWith("  "));
 mostrar(resultado.endsWith("  "));
 mostrar(resultado.indexOf("III"));
-// mostrar(resultado.match(/[a-zA-Z]/));
+
+// tenga texto al principio, tenga un @ en el medio, tenga texto después, tenga un punto después y termine con com o con ar
+// /[a-zA-Z0-9]@[a-zA-Z0-9].[com|ar]/;
