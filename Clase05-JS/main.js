@@ -86,3 +86,32 @@ const mundo = "Mundo";
 console.log(hola, mundo);
 
 console.log(`Este es mi primer ${hola} ${mundo} en javascript`);
+
+for (let i = 0; i < 10; i++) {
+  console.log("El valor de i es", i);
+}
+
+let j = 0;
+
+// while (j > 10) {
+//   // etc.
+// }
+
+do {
+  j++;
+  console.log("Estoy en el DO");
+
+  switch (j) {
+    case 5:
+      console.log("La j es 5");
+      break;
+    case 10:
+      console.log("la j es 10");
+      break;
+    default:
+      console.log("El caso Default");
+      break;
+  }
+} while (j < 10);
+
+console.log(" == FIN MAIN == \n\n");
