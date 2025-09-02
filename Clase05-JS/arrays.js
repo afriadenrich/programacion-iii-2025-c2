@@ -53,23 +53,23 @@ const ordenado = listadoDeNumeros.sort((el1, el2) => {
     return -1;
   }
 });
+console.log(ordenado);
 
 /**
- * Busca una coincidencia y la devuelve
+ * Busca una coincidencia y la devuelve. Si no encuentra, devuelve undefined
  */
 const find = listadoDeNumeros.find((elemnto, indice, listado) => {
   if (elemnto > 25) {
     return elemnto;
   }
 });
+console.log(find);
 
 /** Filtra todos los que coincidan */
 const filtrado = listadoDeNumeros.filter((elemento) => {
   if (elemento > 25) return elemento;
 });
 
-console.log(ordenado);
-console.log(find);
 console.log(filtrado);
 
 // Más o menos como funciona el foreach internamente
