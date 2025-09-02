@@ -52,3 +52,5 @@ mostrar(resultado.indexOf("III"));
 
 // tenga texto al principio, tenga un @ en el medio, tenga texto después, tenga un punto después y termine con com o con ar
 // /[a-zA-Z0-9]@[a-zA-Z0-9].[com|ar]/;
+
+console.log(" == FIN MAIN == \n\n");
