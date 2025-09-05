@@ -1,0 +1,13 @@
+.error {
+  color: #f33;
+  font-weight: 900;
+}
+
+.success {
+  color: #0a0;
+  font-weight: 900;
+}
+
+.centrar {
+  text-align: center;
+}
