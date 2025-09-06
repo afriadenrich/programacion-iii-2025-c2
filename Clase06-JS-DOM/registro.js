@@ -79,3 +79,15 @@ function traerUsuario() {
     console.log(usr);
   }
 }
+
+function registro(usr = "d") {
+  const usuarios = localStorage.getItem("usuarios");
+  if (usuarios !== null) {
+    usuarios.push(usr);
+    localStorage.setItem("usuarios", usuarios);
+  } else {
+    const usuarios = [];
+    usuarios.push(usr);
+  }
+  // ["a", "b", "c"]
+}
