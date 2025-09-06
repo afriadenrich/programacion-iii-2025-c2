@@ -1,0 +1,6 @@
+{
+  "nombre": "Agus",
+  "edad": 33,
+  "catedras": ["prog iii", "prog iv"],
+  "direccion": { "calle": "Calle falsa", "numero": 123 }
+}
