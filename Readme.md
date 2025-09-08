@@ -36,13 +36,31 @@
 
 ### Introducción JavaScript #1
 
+- [Palabras clave y otras expresiones](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators)
+- [Funciones](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions)
+- [Objetos](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_objects)
+- [Arrays](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Clases](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Classes)
+- [Arrow Functions](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- [Spread Operator](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+- [Colecciones](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Keyed_collections)
+
 ## Clase 06 - JS - 05/09/2025
 
-### Introducción JavaScript #2
+### DOM
+
+- [localStorage](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage)
+- [DOM](https://developer.mozilla.org/es/docs/Glossary/DOM)
+- [getElementById](https://developer.mozilla.org/es/docs/Web/API/Document/getElementById)
+- [onclick](https://www.w3schools.com/jsref/event_onclick.asp)
+- [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
+- [innerHTML vs innerText](https://www.freecodecamp.org/news/innerhtml-vs-innertext-vs-textcontent/)
 
 ## Clase 07 - JS - 08/09/2025
 
-### Document Object Model
+### Asincronísmos
+
+
 
 ## Clase 08 - CSS / JS - 12/09/2025
 
