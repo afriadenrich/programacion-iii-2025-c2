@@ -60,6 +60,56 @@ async function mostrarEnHTML(pokemon, numero) {
   }
 }
 
-mostrarEnHTML(pokemon1, 1);
-mostrarEnHTML(pokemon2, 2);
-mostrarEnHTML(pokemon3, 3);
+// mostrarEnHTML(pokemon1, 1);
+// mostrarEnHTML(pokemon2, 2);
+// mostrarEnHTML(pokemon3, 3);
+
+async function mostrarEnHTMLCompleto(pokemon) {
+  try {
+    const { name, id, sprites } = await traerDatos(pokemon);
+    const { imagen, nombre, descripcion } = crearCard();
+
+    imagen.src = sprites.front_default;
+    nombre.innerText = name;
+    descripcion.innerText = "Número " + id;
+  } catch (error) {
+    console.log("Hubo un error, pokemon no encontrado");
+  }
+}
+
+function crearCard() {
+  const section = document.createElement("section");
+  const imagen = document.createElement("img");
+  const nombre = document.createElement("h1");
+  const descripcion = document.createElement("p");
+
+  const main = document.getElementById("main");
+
+  main.appendChild(section);
+
+  section.appendChild(imagen);
+  section.appendChild(nombre);
+  section.appendChild(descripcion);
+
+  return { imagen, nombre, descripcion };
+}
+
+// mostrarEnHTMLCompleto(pokemon1);
+// mostrarEnHTMLCompleto(pokemon2);
+// mostrarEnHTMLCompleto(pokemon3);
+// mostrarEnHTMLCompleto("dialga");
+// mostrarEnHTMLCompleto("arceus");
+// mostrarEnHTMLCompleto("totodile");
+
+const pokemones = [
+  pokemon1,
+  pokemon2,
+  pokemon3,
+  "dialga",
+  "arceus",
+  "totodile",
+];
+
+pokemones.forEach((pokemon) => {
+  mostrarEnHTMLCompleto(pokemon);
+});
