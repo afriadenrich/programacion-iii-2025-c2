@@ -37,12 +37,12 @@
 // PROMESAS
 const pokemon1 = "togekiss";
 const pokemon2 = "charmander";
-const url = "https://pokeapi.co/api/v2/pokemon/" + pokemon1;
+const url = "https://pokeapi.co/api/v2/pokemon/";
 
 console.log("ANTES DE HACER LA PETICIÓN");
 
 // Creamos la petición
-const promesa = fetch(url, {
+const promesa = fetch(url + pokemon1, {
   method: "GET", // GET es por defecto
 });
 
@@ -84,3 +84,17 @@ console.log("DESPUÉS DE DEFINIR EL .THEN");
  * DELETE -> BORRAR
  * OPTIONS -> Obtener info (interno)
  */
+
+// OTRA FORMA
+// async - await
+
+async function traerPokemon(pkmn) {
+  const respuesta = await fetch(url + pkmn);
+  const valor = await respuesta.json();
+
+  console.log(valor);
+}
+
+traerPokemon(pokemon2);
+
+// const algo = async () => {};
