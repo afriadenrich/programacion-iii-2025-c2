@@ -7,7 +7,7 @@ Hacer una página que consuma los datos de la api de la NASA APOD (astronomy pic
     - El input. ♥
     - Imagen. ♥
     - Textos. ♥
-    - Spinner.
+    - Spinner. ♥
 2. CSS
     - Ordenar los elementos. ♥
     - Que entren en pantalla. ♥
@@ -18,5 +18,5 @@ Hacer una página que consuma los datos de la api de la NASA APOD (astronomy pic
     - Cuando se cambie la date, que traiga los datos de ese día. ♥
         - Obtener qué hay en el input ♥
         - Captar el evento de cuando cambia ♥
-    - Limitar la fecha para que no sea futura o muy pasado.
-    - Agregar un spinner (HTML y CSS).
+    - Limitar la fecha para que no sea futura o muy pasado. ♥
+    - Agregar un spinner (HTML y CSS). ♥
