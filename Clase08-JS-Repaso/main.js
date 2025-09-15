@@ -41,6 +41,11 @@ async function traerDatos(date = null) {
     media_type,
   } = await resultado.json();
 
+  if (media_type !== "image") {
+    cambiarCargando(false);
+    return;
+  }
+
   //   // Mostrar los resultados
   tituloElement.innerText = title;
   descElement.innerText = explanation;
