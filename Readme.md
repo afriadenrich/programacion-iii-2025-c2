@@ -60,19 +60,37 @@
 
 ### Asincronísmos
 
+- [async y await](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/async_function)
+- [Uso de fetch](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch)
+- [fetch()](https://developer.mozilla.org/es/docs/Web/API/Window/fetch)
+- [Fetch para principiantes](https://www.freecodecamp.org/espanol/news/javascript-fetch-api-para-principiantes/)
 
+## Clase 08 - JS - 12/09/2025
 
-## Clase 08 - CSS / JS - 12/09/2025
+### Repaso
+
+--
+
+## Clase 09 - CSS / JS - 15/09/2025
 
 ### Bootstrap
 
-## Clase 09 - JS - 15/09/2025
+- [Descargar bootstrap](https://getbootstrap.com/docs/5.3/getting-started/download/)
+- [Containers](https://getbootstrap.com/docs/5.3/layout/containers/)
+- [Grid](https://getbootstrap.com/docs/5.3/layout/grid/)
+- [Flex](https://getbootstrap.com/docs/5.3/utilities/flex/)
+- [Temas](https://getbootstrap.com/docs/5.3/customize/color-modes/#dark-mode)
+- [Difenrecia align items vs align content](https://es.stackoverflow.com/questions/231406/flexbox-diferencia-align-items-y-align-content)
+- [Operador ternario JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
 
-### DOM + Asincronísmos
 
 ## Clase 10 - JS - 19/09/2025
 
 ### Asincronísmos + Formularios
+
+- [Etiqueta form](https://developer.mozilla.org/es/docs/Web/HTML/Element/form)
+- [Validaciones de formularios](https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation)
+- [fetch con query params](https://dev.to/sanjampreetsingh/simplifying-api-calls-with-urlsearchparams-and-fetch-8gn)
 
 ## Clase 11 - JS - 22/09/2025
 
