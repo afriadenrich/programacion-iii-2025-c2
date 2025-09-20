@@ -8,6 +8,7 @@ const getPorIdElement = document.getElementById("GET_ID");
 const postElement = document.getElementById("POST");
 const putElement = document.getElementById("PUT");
 const deleteElement = document.getElementById("DELETE");
+const form = document.getElementById("form");
 
 const API_URL = "https://final-labo-3.vercel.app/";
 
@@ -62,3 +63,39 @@ async function crearAuto() {
 }
 
 postElement.addEventListener("click", crearAuto);
+
+async function editarAuto() {
+  const respuesta = await fetch(API_URL, {
+    method: "PUT",
+    body: JSON.stringify({
+      id: 17,
+      marca: "Audi",
+      modelo: "ABC",
+      precio: 9999,
+      fechaSalida: "105-10-05",
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+}
+
+putElement.onclick = editarAuto;
+
+async function eliminarAuto(id) {
+  const respuesta = await fetch(API_URL + id, { method: "DELETE" }); // Elimina un AUTO
+  //   const respuesta = await fetch(API_URL + id, { method: "GET" }); -> Trae un AUTO
+}
+
+deleteElement.onclick = () => eliminarAuto(20);
+
+// Capturar el submit de un form
+
+form.onsubmit = (event) => {
+  event.preventDefault();
+  console.log(event);
+};
+
+// form.addEventListener("submit", (event) => {
+
+// });

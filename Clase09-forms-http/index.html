@@ -12,6 +12,26 @@
     <button id="PUT">PUT</button>
     <button id="DELETE">DELETE</button>
 
+    <!-- Darle name a los input indica la CLAVE con la que envia el VALOR -->
+    <form
+      action="https://final-labo-3.vercel.app/"
+      method="post"
+      enctype="text/plain"
+      id="form"
+    >
+      <!-- enctype="application/json" ESTO NO SE PUEDE -->
+      <input name="marca" />
+      <br />
+      <input name="modelo" />
+      <br />
+      <input name="precio" type="number" />
+      <br />
+      <input type="date" name="fechaSalida" />
+      <br />
+
+      <input type="submit" value="Enviar" />
+    </form>
+
     <script src="main.js"></script>
   </body>
 </html>
