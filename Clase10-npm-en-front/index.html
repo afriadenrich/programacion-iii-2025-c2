@@ -1,0 +1,42 @@
+<!-- Pasos para usar paquetes:
+1. Instalar (npm install)
+2. Disponibilizar el código (linkearlo, importarlo, etc).
+3. Usarlo
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NPM</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./node_modules/toastify-js/src/toastify.css" />
+  </head>
+  <body>
+    <main class="p-4">
+      <h1>Clase NPM</h1>
+      <hr />
+      <button class="btn btn-success" id="toast">Botón mostrar Toast</button>
+      <button class="btn btn-success" id="alert">Botón mostrar Alert</button>
+      <button class="btn btn-success" id="pdf">Botón descargar PDF</button>
+    </main>
+    <!-- Importo primero Toastify -->
+    <script
+      type="text/javascript"
+      src="./node_modules/toastify-js/src/toastify.js"
+    ></script>
+    <!-- Importo lo externo -->
+    <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <!-- JsPDF -->
+    <script src="./node_modules/jspdf/dist/jspdf.umd.js"></script>
+
+    <!-- Órden! Último lo nuestro -->
+    <script src="main.js"></script>
+    <script src="pdf.js"></script>
+  </body>
+</html>
