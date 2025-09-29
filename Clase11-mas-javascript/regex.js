@@ -90,6 +90,37 @@ const patronAZ = /[A-Z]\n[a-z]/;
 // console.log(patron.test("a asdsad"));
 
 // Validar un mail. Tiene que tener:
-// En la primera parte, letras, numeros, guiones. UN arroba. Luego solo letras, guiones o puntos.
+// En la primera parte, letras, numeros, guiones (-_). UN arroba. Luego solo letras, guiones o puntos.
+// No puede terminar con .
 
-const patronMail = / /;
+// \w -> letras, numeros y _
+
+// const patronMail = /^[A-Za-z0-9-_]+@[A-Za-z.-]+[^.]$/;
+// const patronMail2 = /^[\w-]+@[A-Za-z.-]+[^.]$/;
+// // const patronMail3 = /^[\w-]+@(.|[.-])+[^.]$/; NO VA, PERMITE DUPLCIAR @
+
+// const mail1 = "agus@mail.com"; // true
+// const mail2 = "agus_83@mail.com"; // true
+// const mail3 = "agus-_123@ma-il.com"; // true
+// const mail4 = "agus@@mail.com"; // false
+// const mail5 = "agus-_123@ma.il.com"; // true
+// const mail6 = "agus-_123@ma.il.com."; // false
+// const mail7 = "afriadenrich@sistemas-utnfra.com.ar"; // true
+
+// console.log("primer patron");
+// console.log(patronMail.test(mail1));
+// console.log(patronMail.test(mail2));
+// console.log(patronMail.test(mail3));
+// console.log(patronMail.test(mail4));
+// console.log(patronMail.test(mail5));
+// console.log(patronMail.test(mail6));
+// console.log(patronMail.test(mail7));
+
+// console.log("segundo patron");
+// console.log(patronMail2.test(mail1));
+// console.log(patronMail2.test(mail2));
+// console.log(patronMail2.test(mail3));
+// console.log(patronMail2.test(mail4));
+// console.log(patronMail2.test(mail5));
+// console.log(patronMail2.test(mail6));
+// console.log(patronMail2.test(mail7));
