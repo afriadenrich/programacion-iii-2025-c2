@@ -96,6 +96,15 @@
 
 ### Node en Front
 
+- [Node](https://nodejs.org/es)
+- [NPM](https://www.npmjs.com/package/node)
+
+Paquetes que instalamos
+- [SweetAlert](http://sweetalert2.github.io/)
+- [Toastify](https://apvarun.github.io/toastify-js/)
+- [Bootstrap](https://getbootstrap.com/)
+- [jsPDF](https://www.npmjs.com/package/jspdf?activeTab=readme)
+
 ## Clase 12 - JS - 26/09/2025
 
 ### Simulacro Primer Parcial
@@ -144,7 +153,7 @@
 
 ### Subida de archivos + Descarga
 
-## Clase 24 - Node - 07/11/2025
+## Clase 24 - Node - 07/11/2025 - Nota: Ese día Nico no está
 
 ### Encriptación + Corrección
 
