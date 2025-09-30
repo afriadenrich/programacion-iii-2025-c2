@@ -124,3 +124,46 @@ const patronAZ = /[A-Z]\n[a-z]/;
 // console.log(patronMail2.test(mail5));
 // console.log(patronMail2.test(mail6));
 // console.log(patronMail2.test(mail7));
+
+// const patron = /.{6,15}/g;
+// const cadena = "Elvelozmurcielagohinducomiahigosetcetcetc";
+// let resultado = "";
+
+// while ((resultado = patron.exec(cadena)) !== null) {
+//   console.log(resultado[0]);
+// }
+
+// Tarea que no es tarea: encontrar un patron que haga que con el exec devuelva el dni, el nombre y el apellido separados.
+// const patronDigiton = //;
+// const texto1 = "DNI: 12345123, Nombre: peptio, Apellido: Alfredo";
+// const texto2 = "DNI: 213123, Nombre: oreo, Apellido: Fernando";
+// const texto3 = "DNI: 53523523, Nombre: rumba, Apellido: Jorge";
+
+// Match sin la flag g -> devuelve la primera coincidencia.
+// Match con la flag g -> devuelve array con todas las coincidencias.
+// console.log("hola soy agus".match(/\w+/g));
+// console.log(..."hola soy agus".matchAll(/\w+/g));
+
+// replace de string.
+
+const cadena1 = "Dr. Agustín Friadenrich";
+const cadena2 = "Dra. Agustín Friadenrich";
+const cadena3 = "D. Agustín Friadenrich";
+
+const patron = /^([A-Za-z]*.\s)([\w+|íáéóú|\s]+)/;
+
+const resultado = "Dr. Agustín Friadenrich".replace(
+  patron,
+  (match, grupo1, grupo2, offset, completo) => {
+    console.log(match, grupo1, grupo2, offset, completo);
+    return grupo2;
+  }
+);
+
+console.log(resultado);
+
+const resultado2 = "Dra. Lo que sea".replace(/^([A-Za-z]*.\s)/, "");
+
+console.log(resultado2);
+
+// otros métodos de string que permiten regex: search, includes, etc.
