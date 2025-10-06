@@ -111,7 +111,14 @@ Paquetes que instalamos
 
 ## Clase 13 - JS - 29/09/2025
 
-### Repaso + _pendiente_
+### Regex + operadores
+
+- [Regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)
+- [Probar Regex](https://regexr.com/)
+- [Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+- [Test](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
+
+- [Operadores](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators)
 
 ## Clase 14 - JS - 03/10/2025
 
