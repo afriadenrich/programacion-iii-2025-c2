@@ -130,9 +130,11 @@ Paquetes que instalamos
 
 ## Clase 16 - Node - 10/10/2025
 
-### Ruteo + Conexión DB
+### Feriado
 
 ## Clase 17 - Node - 13/10/2025
+
+### Ruteo + Conexión DB
 
 ### Conexión DB + CRUD
 

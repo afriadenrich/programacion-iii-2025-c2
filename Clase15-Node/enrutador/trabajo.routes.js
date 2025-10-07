@@ -2,7 +2,7 @@ const express = require("express");
 const enrutador = express.Router();
 
 enrutador.get("/", (req, res) => {
-  res.send("Funciona");
+  res.download(__dirname + "/data.json");
 });
 enrutador.post("/", (req, res) => {
   res.send("Funciona");
@@ -11,10 +11,13 @@ enrutador.delete("/", (req, res) => {
   res.send("Funciona");
 });
 enrutador.patch("/", (req, res) => {
-  res.send("Funciona");
+  res.send("Con end después");
+  res.end();
+
+  console.log("Después del end");
 });
 enrutador.put("/", (req, res) => {
-  res.send("Funciona");
+  res.sendStatus(400);
 });
 
 enrutador.get("/:id", (req, res) => {
@@ -37,7 +40,7 @@ enrutador.get("/:id", (req, res) => {
 });
 
 enrutador.get("/:id/habilidades", (req, res) => {
-  res.send("Funciona");
+  res.json({ mensaje: "get con json" });
 });
 
 // Exportar usando módulos comunes
