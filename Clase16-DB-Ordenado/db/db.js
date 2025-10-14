@@ -1,9 +1,9 @@
 // Instanciar sequelize y exportarlo
 const { Sequelize } = require("sequelize");
+const stringDb = process.env.STRING_DB;
+const sequelize = new Sequelize(stringDb);
 
-const sequelize = new Sequelize(
-  "mysql://root:123456@localhost:3307/autos_2025_c2"
-);
+// sequelize.sync({ force: true });
 
 // require importa, module.exports exporta
 module.exports = sequelize;

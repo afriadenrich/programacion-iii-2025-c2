@@ -1,32 +1,47 @@
 const Auto = require("../models/auto");
+const { Op } = require("sequelize");
 
 const router = require("express").Router();
 
 // CRUD
 // CREATE
-router.post("/auto", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
+    console.log(req.body);
+    const { precio, marca } = req.body;
+
     const creado = await Auto.create({
-      precio: 10000,
-      marca: "Motorola",
-      modelo: "8",
-      fechaSalida: "1930-10-10",
+      precio: precio,
+      marca: marca,
+      // modelo: "8",
+      // fechaSalida: "1930-10-10",
     });
 
     // 200 -> OK
     // 201 -> CREATED
     res.status(201).send(creado);
   } catch (error) {
-    console.log(error);
-    res.status(500).send({ message: "Error interno" });
+    if (error instanceof TypeError) {
+      res.status(400).send({ message: "Falta precio o marca" });
+    } else {
+      console.log(error);
+      res.status(500).send({ message: "Error interno" });
+    }
   }
 });
 
 // READ
-router.get("/auto", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
-    // SELECT * FROM autos
-    const resultado = await Auto.findAll();
+    // SELECT * FROM autos WHERE marca = "motorola" AND id <= 2
+    const resultado = await Auto.findAll({
+      // where: {
+      //   id: {
+      //     [Op.lte]: 2,
+      //   },
+      //   marca: "Motorola",
+      // },
+    });
     res.status(200).send(resultado);
   } catch (error) {
     console.log(error);
@@ -35,7 +50,7 @@ router.get("/auto", async (req, res) => {
 });
 
 // READ
-router.get("/auto/:id", async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     const resultado = await Auto.findByPk(req.params.id);
     res.status(200).send(resultado);
@@ -46,12 +61,14 @@ router.get("/auto/:id", async (req, res) => {
 });
 
 // UPDATE
-router.put("/auto/:id", async (req, res) => {
+router.put("/:id", async (req, res) => {
   try {
+    const { precio, marca } = req.body;
+
     const resultado = await Auto.update(
       {
-        marca: "Modificado",
-        precio: 9999999,
+        marca: marca,
+        precio: precio,
       },
       {
         where: {
@@ -68,8 +85,9 @@ router.put("/auto/:id", async (req, res) => {
 });
 
 // DELETE
-router.delete("/auto/:id", async (req, res) => {
+router.delete("/:id", async (req, res) => {
   try {
+    console.log(req.body);
     const resultado = await Auto.destroy({
       where: {
         id: req.params.id,
