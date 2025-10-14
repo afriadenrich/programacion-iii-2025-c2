@@ -38,7 +38,7 @@ router.get("/auto", async (req, res) => {
 router.get("/auto/:id", async (req, res) => {
   try {
     const resultado = await Auto.findByPk(req.params.id);
-    return resultado;
+    res.status(200).send(resultado);
   } catch (error) {
     console.log(error);
     res.status(500).send({ message: "Error interno" });
@@ -46,6 +46,40 @@ router.get("/auto/:id", async (req, res) => {
 });
 
 // UPDATE
+router.put("/auto/:id", async (req, res) => {
+  try {
+    const resultado = await Auto.update(
+      {
+        marca: "Modificado",
+        precio: 9999999,
+      },
+      {
+        where: {
+          id: req.params.id,
+        },
+      }
+    );
+    // UPDATE marca=Modificado precio=9999999 WHERE ID = ID
+    res.status(200).send(resultado);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ message: "Error interno" });
+  }
+});
+
 // DELETE
+router.delete("/auto/:id", async (req, res) => {
+  try {
+    const resultado = await Auto.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.status(200).send(resultado);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ message: "Error interno" });
+  }
+});
 
 module.exports = router;
