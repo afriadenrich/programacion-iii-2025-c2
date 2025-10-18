@@ -136,11 +136,9 @@ Paquetes que instalamos
 
 ### Ruteo + Conexión DB
 
-### Conexión DB + CRUD
-
 ## Clase 18 - Node - 17/10/2025
 
-### MVC + Manejo de respuestas
+### Fullstack + Manejo de respuestas
 
 ## Clase 19 - Node - 20/10/2025
 
