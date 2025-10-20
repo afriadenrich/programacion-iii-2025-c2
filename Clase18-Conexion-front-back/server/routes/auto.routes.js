@@ -13,6 +13,7 @@ const router = require("express").Router();
  */
 router.post("/", async (req, res) => {
   try {
+    console.log(req.body);
     // 1. Tomar datos.
     const body = req.body;
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Básico</title>
+  </head>
+  <body>
+    <form id="form-crear">
+      <label for="marca">Marca</label>
+      <input type="text" id="marca" />
+      <br />
+      <label for="precio">Precio</label>
+      <input type="number" id="precio" />
+      <br />
+      <label for="fechaDeLanzamiento">Fecha de lanzamiento</label>
+      <input type="date" id="fechaDeLanzamiento" />
+      <br />
+
+      <button type="submit">Crear</button>
+    </form>
+
+    <br />
+    <button id="boton-traer">Traer todos</button>
+
+    <br />
+    <br />
+    <input id="id" type="number" min="0" />
+
+    <button id="boton-traer-por-id">Traer por id</button>
+    <button id="boton-eliminar-por-id">Eliminar</button>
+
+    <br />
+    <br />
+    <form id="form-modificar">
+      <label for="marcaUpdate">Marca</label>
+      <input type="text" id="marcaUpdate" />
+      <br />
+      <label for="precioUpdate">Precio</label>
+      <input type="number" id="precioUpdate" required />
+      <br />
+      <label for="fechaDeLanzamientoUpdate">Fecha de lanzamiento</label>
+      <input type="date" id="fechaDeLanzamientoUpdate" />
+      <br />
+
+      <button type="submit">Modificar</button>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
