@@ -138,15 +138,15 @@ Paquetes que instalamos
 
 ## Clase 18 - Node - 17/10/2025
 
-### Fullstack + Manejo de respuestas
+### Intro TP + Cors
 
 ## Clase 19 - Node - 20/10/2025
 
-### Middlewares
+### Fullstack + Manejo de respuestas 
 
 ## Clase 20 - Node - 24/10/2025
 
-### Intro EJS + Corrección
+### Middlewares + Corrección
 
 ## Clase 21 - Node - 27/10/2025
 
