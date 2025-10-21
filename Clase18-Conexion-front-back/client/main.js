@@ -4,7 +4,7 @@ const marcaEl = document.getElementById("marca");
 const precioEl = document.getElementById("precio");
 const fechaDeLanzamientoEl = document.getElementById("fechaDeLanzamiento");
 
-const apiUrl = "http://localhost:3000";
+const apiUrl = "https://ejemplo-cors-sqlite.onrender.com";
 
 form.onsubmit = async (event) => {
   // Evito que se recargue la página
