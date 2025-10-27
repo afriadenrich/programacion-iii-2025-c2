@@ -1,16 +1,17 @@
-const { Auto, Garage } = require("../models/relaciones");
+const { Auto, Garage, Conductor } = require("../models/relaciones");
 const { Op } = require("sequelize");
 
+// Crea con relación
 const crearAuto = async (req, res) => {
   try {
     console.log(req.body);
-    const { precio, marca } = req.body;
+    const { precio, marca, idConductor, idGarage } = req.body;
 
     const creado = await Auto.create({
       precio: precio,
       marca: marca,
-      // modelo: "8",
-      // fechaSalida: "1930-10-10",
+      GarageId: idGarage,
+      ConductorId: idConductor,
     });
 
     // 200 -> OK
@@ -44,10 +45,11 @@ const traerAutos = async (req, res) => {
   }
 };
 
+// Cómo traer datos de una relación
 const traerAutoPorId = async (req, res) => {
   try {
     const auto = await Auto.findByPk(req.params.id, {
-      include: Garage,
+      include: [Garage, Conductor],
     });
 
     const garage = await auto.getGarage();

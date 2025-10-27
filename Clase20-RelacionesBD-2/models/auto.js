@@ -21,7 +21,7 @@ const Auto = sequelize.define(
   {
     tableName: "autos",
     timestamps: true,
-    createdAt: true,
+    createdAt: false,
     updatedAt: false,
   }
 );

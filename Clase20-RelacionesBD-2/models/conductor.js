@@ -1,8 +1,8 @@
 const sequelize = require("../db/db");
 const { DataTypes } = require("sequelize");
 
-const Garage = sequelize.define(
-  "Garage",
+const Conductor = sequelize.define(
+  "Conductor",
   {
     id: {
       type: DataTypes.INTEGER,
@@ -10,20 +10,13 @@ const Garage = sequelize.define(
       autoIncrement: true,
     },
     nombre: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-    },
-    precio: {
-      type: DataTypes.FLOAT,
-      allowNull: true,
+      type: DataTypes.STRING,
     },
   },
   {
-    tableName: "garages",
-    timestamps: true,
     createdAt: false,
     updatedAt: false,
   }
 );
 
-module.exports = Garage;
+module.exports = Conductor;
