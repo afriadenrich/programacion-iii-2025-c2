@@ -154,11 +154,11 @@ Paquetes que instalamos
 
 ## Clase 22 - Node - 31/10/2025
 
-### Manejo de archivos + Corrección
+### EJS + Corrección
 
 ## Clase 23 - Node - 03/11/2025
 
-### Subida de archivos + Descarga
+### Manejo de archivos + Subida de archivos + Descarga PDF
 
 ## Clase 24 - Node - 07/11/2025 - Nota: Ese día Nico no está
 
